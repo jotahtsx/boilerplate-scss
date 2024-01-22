@@ -8,12 +8,13 @@
 
 
 body {
+    display: grid;
     font-family: Poppins;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-areas:
-        'header'
-        'main';
+        'sidebar header'
+        'sidebar main';
     height: 100vh;
     transition: 0.4s;
 }

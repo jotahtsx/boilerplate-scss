@@ -7,10 +7,11 @@
 // colors
 
 // components (buttons, cards)
+@import 'components/card';
 
 // layouts (header, sidebar, main)
-@import 'header';
-@import 'sidebar';
-@import 'main';
+@import 'layouts/header';
+@import 'layouts/sidebar';
+@import 'layouts/main';
 
 // utilities (margin, padding, opacity)
