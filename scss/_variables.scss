@@ -8,6 +8,8 @@ $info: #3dc2ff;
 $light: #f4f5f8;
 $medium: #92949c;
 $dark: #222428;
+$white: #fff;
+$black: #000;
 
 //color palette
 $colors: (
@@ -19,7 +21,9 @@ $colors: (
     "info": $info,
     "light": $light,
     "medium": $medium,
-    "dark": $dark
+    "dark": $dark,
+    "white": $white,
+    "black": $black
 );
 
 //spacing
