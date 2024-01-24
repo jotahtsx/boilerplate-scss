@@ -20,14 +20,14 @@
     padding: 12px;
     transition: .9s ease all;
     span {
-      font-size: 2.6rem;
+      font-size: 2rem;
     }
   }
 }
 
 
-@media only screen and (min-width: 46.875em) {
-  .menu-icon {
-    visibility: hidden;
-  }
-}
+// @media only screen and (min-width: 46.875em) {
+//   .menu-icon {
+//     visibility: hidden;
+//   }
+// }
