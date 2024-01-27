@@ -6,7 +6,6 @@ nav {
   left: 0;
   height: 100%;
   width: 240px;
-  padding: 10px 14px;
   background-color: $white;
 
   .brand-name {
@@ -25,10 +24,11 @@ nav {
       border-radius: math.div($base-border-radius, 2);
     }
   }
-  .brand-jucelino {
-    font-size: 22px;
+
+  .brand-the-name {
+    font-size: 18px;
     font-weight: 600;
-    color: $black;
     margin-left: 8px;
+    color: $black;
   }
 }
