@@ -11,6 +11,10 @@ nav .menu-items {
       align-items: center;
       height: 50px;
       text-decoration: none;
+      .link-name {
+        font-size: 18px;
+        font-weight: 400;
+      }
       i {
         align-items: center;
         display: flex;
