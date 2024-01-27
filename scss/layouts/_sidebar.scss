@@ -1,0 +1,47 @@
+.menu-items {
+  margin-top: 40px;
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+
+    a {
+      align-items: center;
+      display: flex;
+      height: 40px;
+      text-decoration: none;
+      position: relative;
+      i {
+        font-size: 24px;
+        min-width: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $concrete;
+      }
+
+      .link-name {
+        font-size: 16px;
+        color: $concrete;
+      }
+    }
+  }
+  .nav-links li a:hover i,
+  .nav-links li a:hover .link-name {
+    color: $primary;
+  }
+}
+
+.nav-links li a:hover::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: $primary;
+}

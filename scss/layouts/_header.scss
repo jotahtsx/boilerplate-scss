@@ -9,14 +9,6 @@ nav {
   padding: 10px 14px;
   background-color: $white;
 
-  .menu-items {
-    margin-top: 40px;
-    height: calc(100% - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .brand-name {
     display: flex;
     align-items: center;
