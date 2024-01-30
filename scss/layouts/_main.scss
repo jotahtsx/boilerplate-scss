@@ -1,7 +1,64 @@
+@use 'sass:math';
+
 .dashboard {
   position: relative;
   left: 240px;
-  background-color: red;
+  background-color: $white;
   height: 100vh;
   width: calc(100% - 240px);
+  padding: 10px 14px;
+  .top {
+    position: fixed;
+    top: 0;
+    left: 240px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 240px);
+    justify-content: space-between;
+    padding: 10px 14px;
+    background-color: $white;
+    .sidebar-toggle {
+      font-size: 28px;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+      cursor: pointer;
+    }
+    .user-actions {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+        border: none;
+        margin-right: 10px;
+        border-radius: math.div($base-border-radius, 2);
+        cursor: pointer;
+      }
+      svg {
+        color: $white;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+
+[data-theme="dark"] {
+
+  .dashboard {
+    background-color: #132337;
+    .top {
+          background-color: #132337;
+          .sidebar-toggle {
+            color: $white;
+          }
+    }
+  }
 }

@@ -8,10 +8,18 @@ nav {
   width: 240px;
   padding: 10px 14px;
   background-color: $white;
+  border: $base-border-thickness solid $light;
 
   .brand-name {
     display: flex;
     align-items: center;
+  }
+
+  .brand-the-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: $black;
   }
 
   .brand-image {
@@ -25,11 +33,21 @@ nav {
       border-radius: math.div($base-border-radius, 2);
     }
   }
+}
 
-  .brand-the-name {
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 8px;
-    color: $black;
+[data-theme="dark"] {
+  nav {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgba($color: $base-border, $alpha: 0.1);
+    background-color: #132337;
+
+    .brand-the-name {
+      color: $white;
+    }
+
   }
 }
+
+

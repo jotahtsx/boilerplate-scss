@@ -45,3 +45,23 @@
   border-radius: 50%;
   background-color: $primary;
 }
+
+[data-theme="dark"] {
+  .menu-items {
+    li {
+      a {
+        i {
+          color: rgba($white, 0.75);
+        }
+  
+        .link-name {
+          color: rgba($white, 0.75);
+        }
+      }
+    }
+    .nav-links li a:hover i,
+    .nav-links li a:hover .link-name {
+      color: $primary;
+    }
+  }
+}
