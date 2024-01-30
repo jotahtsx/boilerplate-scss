@@ -35,6 +35,31 @@ nav {
   }
 }
 
+nav.close {
+  width: 73px;
+}
+
+nav.close li a .link-name {
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav.close .brand-the-name {
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav.close ~ .dashboard {
+  left: 73px;
+  width: calc(100% - 73px);
+}
+
+nav.close ~ .dashboard .top {
+  left: 73px;
+  width: calc(100% - 73px);
+}
+
+
 [data-theme="dark"] {
   nav {
     border-left: none;

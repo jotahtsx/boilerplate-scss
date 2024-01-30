@@ -1,13 +1,20 @@
 const btnDarkModeToggle = document.getElementById('aj');
 const themeSystem = localStorage.getItem('themeSystem') || 'light';
+const body = document.querySelector("body");
+const sidebar = body.querySelector("nav");
+const sidebarToggle = body.querySelector('.sidebar-toggle');
 
-const body = document.querySelector("body"),
-    sidebar = body.querySelector("nav")
-    sidebarToggle = body.querySelector('.sidebar-toggle')
+const isMenuClosed = localStorage.getItem('isMenuClosed') === 'true';
+if (isMenuClosed) {
+    sidebar.classList.add("close");
+}
 
 sidebarToggle.addEventListener("click", () => {
-    sidebar.classList.toggle("close")
-})    
+    sidebar.classList.toggle("close");
+
+    const isMenuClosed = sidebar.classList.contains("close");
+    localStorage.setItem('isMenuClosed', isMenuClosed.toString());
+});
 
 btnDarkModeToggle.addEventListener('click', () => {
     let oldTheme = localStorage.getItem('themeSystem') || 'light';
