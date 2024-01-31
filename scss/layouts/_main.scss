@@ -7,6 +7,76 @@
   height: 100vh;
   width: calc(100% - 240px);
   padding: 10px 14px;
+
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% / 3 - 15px);
+      padding: 15px 20px;
+      background-color: $primary;
+      border-radius: math.div($base-border-radius, 2);
+      position: relative;
+
+      .main-title {
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+      }
+
+      i {
+        font-size: 35px;
+        color: $white;
+      }
+
+      .number {
+        white-space: nowrap;
+        font-size: 40px;
+        font-weight: 600;
+        color: $white;
+      }
+    }
+
+    .box1 {
+      background-color: #133137;
+
+      svg {
+        position: absolute;
+        right: 0;
+        color: #164546;
+      }
+    }
+
+    .box2 {
+      background-color: #3E2A21;
+      overflow: hidden;
+
+      svg {
+        position: absolute;
+        right: -12px;
+        color: #64391E;
+      }
+    }
+
+    .box3 {
+      background-color: #2E244E;
+      overflow: hidden;
+
+      svg {
+        position: absolute;
+        right: 0;
+        right: -12px;
+        color: #472E6F;
+      }
+    }
+  }
+
   .top {
     position: fixed;
     top: 0;
@@ -17,6 +87,7 @@
     justify-content: space-between;
     padding: 10px 14px;
     background-color: $white;
+
     .sidebar-toggle {
       font-size: 28px;
       justify-content: center;
@@ -24,11 +95,13 @@
       color: $black;
       cursor: pointer;
     }
+
     .user-actions {
       align-items: center;
       justify-content: center;
       display: flex;
-      button{
+
+      button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,6 +113,7 @@
         border-radius: math.div($base-border-radius, 2);
         cursor: pointer;
       }
+
       svg {
         color: $white;
         height: 24px;
@@ -47,17 +121,22 @@
       }
     }
   }
+
   .dash-content {
-    padding-top: 72px;
+    padding-top: 70px;
     display: flex;
     align-items: center;
+
     .title {
       height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
+
       span {
         margin-left: 12px;
+        color: $concrete;
+        font-weight: 600;
       }
     }
   }
@@ -68,26 +147,90 @@
   font-size: 34px;
 }
 
+.activities .title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  span {
+    font-weight: 600;
+    color: $concrete;
+  }
+
+  i {
+    color: $concrete;
+    font-size: 33px;
+    margin-right: 12px;
+  }
+}
+
 
 [data-theme="dark"] {
 
   .dashboard {
     background-color: #132337;
+
     .top {
-          background-color: #132337;
-          .sidebar-toggle {
-            color: $white;
-          }
+      background-color: #132337;
+
+      .sidebar-toggle {
+        color: $white;
+      }
     }
+
+    .boxes {
+      .box {
+        .main-title {
+          color: $white;
+        }
+
+        i {
+          color: $white;
+        }
+
+        .number {
+          color: $white;
+        }
+      }
+
+      .box1 {
+        background-color: #133137;
+      }
+
+      .box2 {
+        background-color: #3E2A21;
+      }
+
+      .box3 {
+        background-color: #2E244E;
+      }
+    }
+
     .dash-content i {
       color: $white;
       font-size: 34px;
-      span{
+
+      span {
         color: $concrete;
       }
     }
-    .text{
+
+    .text {
+      color: $concrete;
+    }
+  }
+
+  .activities .title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    i {
       color: $white;
+      font-size: 33px;
+      margin-right: 12px;
     }
   }
 }
