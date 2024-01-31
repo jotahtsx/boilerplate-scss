@@ -47,6 +47,25 @@
       }
     }
   }
+  .dash-content {
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+    .title {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.dash-content i {
+  color: $concrete;
+  font-size: 34px;
 }
 
 
@@ -59,6 +78,16 @@
           .sidebar-toggle {
             color: $white;
           }
+    }
+    .dash-content i {
+      color: $white;
+      font-size: 34px;
+      span{
+        color: $concrete;
+      }
+    }
+    .text{
+      color: $white;
     }
   }
 }
